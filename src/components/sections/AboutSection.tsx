@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FloatingElement } from '../animations/FloatingElements';
+// import { FloatingElement } from '../animations/FloatingElements';
 
 const AboutSection = () => {
   return (
@@ -24,14 +24,14 @@ const AboutSection = () => {
             >
               <div className="relative rounded-3xl overflow-hidden">
                 {/* Purple Gradient Background */}
-                <div className="absolute inset-0 bg-purple-gradient opacity-20 rounded-3xl"></div>
+                {/* <div className="absolute inset-0 bg-purple-gradient opacity-20 rounded-3xl"></div> */}
                 
                 {/* Main Image */}
                 <div className="relative z-10">
                   <Image 
                     width={600}
                     height={400}
-                    src="/images/about-image.png" 
+                    src="/newImage/about.png" 
                     alt="About Us" 
                     className="w-full h-auto rounded-3xl"
                     onError={(e) => {
@@ -42,7 +42,7 @@ const AboutSection = () => {
                 </div>
                 
                 {/* Floating Elements */}
-                <FloatingElement 
+                {/* <FloatingElement 
                   className="absolute top-10 left-0 transform -translate-x-1/3 z-20"
                   duration={4}
                   y={15}
@@ -53,9 +53,9 @@ const AboutSection = () => {
                       <span className="text-dark font-bold">40+</span>
                     </div>
                   </div>
-                </FloatingElement>
+                </FloatingElement> */}
                 
-                <FloatingElement 
+                {/* <FloatingElement 
                   className="absolute bottom-10 right-0 transform translate-x-1/3 z-20"
                   duration={5}
                   delay={0.5}
@@ -67,11 +67,11 @@ const AboutSection = () => {
                       <span className="text-white font-bold">24/7</span>
                     </div>
                   </div>
-                </FloatingElement>
+                </FloatingElement> */}
                 
                 {/* Shape Elements */}
-                <div className="absolute -bottom-5 -right-5 w-32 h-32 rounded-full border-4 border-secondary/20 border-dashed animate-spin-slow"></div>
-                <div className="absolute -top-5 -left-5 w-24 h-24 rounded-full border-4 border-primary/20 border-dashed animate-spin-slow"></div>
+                <div className="absolute bottom-5 right-5 w-32 h-32 rounded-full border-4 border-[#529367] border-dashed animate-spin-slow"></div>
+                <div className="absolute top-5 left-5 w-24 h-24 rounded-full border-4 border-primary/20 border-dashed animate-spin-slow"></div>
               </div>
             </motion.div>
           </div>

@@ -21,12 +21,12 @@ const AboutContent = () => {
             >
               <div className="relative rounded-3xl overflow-hidden">
                 {/* Purple Gradient Background */}
-                <div className="absolute inset-0 bg-purple-gradient opacity-20 rounded-3xl"></div>
+                {/* <div className="absolute inset-0 bg-purple-gradient opacity-20 rounded-3xl"></div> */}
 
                 {/* Main Image */}
                 <div className="relative z-10">
                   <Image
-                    src="/images/about/about-Image1.jpg"
+                    src="/newImage/about-2.png"
                     alt="About Us"
                     width={600}
                     height={400}
@@ -40,7 +40,7 @@ const AboutContent = () => {
                 </div>
 
                 {/* Experience Box */}
-                <motion.div
+                {/* <motion.div
                   className="absolute -bottom-10 -right-10 bg-primary text-[#13042a] p-6 rounded-2xl shadow-lg z-20 w-40 h-40 flex flex-col items-center justify-center"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -51,7 +51,7 @@ const AboutContent = () => {
                   <span className="text-center font-medium mt-1">
                     Years Experience
                   </span>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Shape Elements */}
                 <div className="absolute -bottom-5 -left-5 w-32 h-32 rounded-full border-4 border-secondary/20 border-dashed animate-spin-slow"></div>
@@ -197,7 +197,7 @@ const AboutContent = () => {
               >
                 <div className="relative rounded-3xl overflow-hidden">
                   <Image
-                    src="/images/about/team-meeting.jpg"
+                    src="/newImage/about-5.jpg"
                     alt="Team Meeting"
                     width={600}
                     height={400}
