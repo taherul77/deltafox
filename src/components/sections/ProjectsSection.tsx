@@ -100,7 +100,7 @@ const ProjectsSection = () => {
       <div className="absolute bottom-40 right-20 w-20 h-20 rounded-full bg-secondary/10 blur-md animate-float-slow"></div>
       <div className="absolute top-1/3 right-1/3 w-12 h-12 rounded-full bg-accent/10 blur-md animate-float-slower"></div>
 
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.p
