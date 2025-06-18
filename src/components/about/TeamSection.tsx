@@ -32,7 +32,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, position, delay })
             alt={name} 
             width={400}
             height={500}
-            className="w-full h-auto rounded-xl transition-transform duration-500 group-hover:scale-110"
+            className="w-full h-64 rounded-xl transition-transform duration-500 group-hover:scale-110"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.src = "https://placehold.co/400x500/7d2ae8/ffffff?text=Team+Member";
@@ -71,22 +71,22 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, position, delay })
 const TeamSection = () => {
   const teamMembers = [
     {
-      image: '/images/team/team-1.jpg',
+      image: '/images/team/team1.avif',
       name: 'Alex Morgan',
       position: 'CEO & Founder',
     },
     {
-      image: '/images/team/team-2.jpg',
+      image: '/images/team/team3.jpg',
       name: 'Sarah Taylor',
       position: 'Web Developer',
     },
     {
-      image: '/images/team/team-3.jpg',
+      image: '/images/team/team2.jpeg',
       name: 'David Warner',
       position: 'UI/UX Designer',
     },
     {
-      image: '/images/team/team-4.jpg',
+      image: '/images/team/team4.avif',
       name: 'James Anderson',
       position: 'Project Manager',
     },
