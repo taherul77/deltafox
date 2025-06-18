@@ -91,22 +91,22 @@ const TeamSection = () => {
       position: 'Project Manager',
     },
     {
-      image: '/images/team/team-5.jpg',
+      image: '/images/team/team5.webp',
       name: 'Emily Johnson',
       position: 'Marketing Specialist',
     },
     {
-      image: '/images/team/team-6.jpg',
+      image: '/images/team/team6.jpg',
       name: 'Michael Brown',
       position: 'App Developer',
     },
     {
-      image: '/images/team/team-7.jpg',
+      image: '/images/team/team7.jpg',
       name: 'Jessica Williams',
       position: 'Content Strategist',
     },
     {
-      image: '/images/team/team-8.jpg',
+      image: '/images/team/team8.jpg',
       name: 'Robert Davis',
       position: 'IT Consultant',
     },
