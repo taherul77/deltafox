@@ -333,6 +333,7 @@ const projects = [
       "Surplus food redistribution program",
       "Carbon-neutral delivery option",
     ],
+    
   },
 ];
 
