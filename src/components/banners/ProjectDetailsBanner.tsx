@@ -3,8 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+interface ProjectDetailsBannerProps {
+  title?: string;
+  image?: string;
+}
 
-const ProjectDetailsBanner = () => {
+const ProjectDetailsBanner = ({title}: ProjectDetailsBannerProps) => {
   return (
     <section className="relative bg-[#13042a] pt-40 pb-20 overflow-hidden">
       {/* Background Elements */}
@@ -44,7 +48,7 @@ const ProjectDetailsBanner = () => {
               Projects
             </Link>
             <span>/</span>
-            <span className="text-primary">Projects Details</span>
+            <span className="text-primary">{title}</span>
           </motion.div>
         </div>
       </div>
