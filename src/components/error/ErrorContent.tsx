@@ -22,7 +22,7 @@ const ErrorContent = () => {
           <Link href="/" className="inline-block mb-10">
             <Image 
               src="/logo/logo.png" 
-              alt="Stax Logo" 
+              alt="Logo" 
               width={180} 
               height={50}
               className="h-auto"
