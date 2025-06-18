@@ -60,7 +60,7 @@ const ComingSoonContent = () => {
         <div className="text-center max-w-3xl mx-auto">
           <Link href="/" className="inline-block mb-10">
             <Image 
-              src="/images/logo.png" 
+              src="/logo/logo.png" 
               alt="Stax Logo" 
               width={180} 
               height={50}
