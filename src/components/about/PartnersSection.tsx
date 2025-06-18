@@ -6,12 +6,12 @@ import Image from 'next/image';
 
 const PartnersSection = () => {
   const partners = [
-    { image: '/images/partners/partner-1.png', name: 'Partner 1' },
-    { image: '/images/partners/partner-2.png', name: 'Partner 2' },
-    { image: '/images/partners/partner-3.png', name: 'Partner 3' },
-    { image: '/images/partners/partner-4.png', name: 'Partner 4' },
-    { image: '/images/partners/partner-5.png', name: 'Partner 5' },
-    { image: '/images/partners/partner-6.png', name: 'Partner 6' },
+    { image: '/images/partner/bkash1.avif', name: 'Partner 1' },
+    { image: '/images/partner/rocket.png', name: 'Partner 2' },
+    { image: '/images/partner/mcash.png', name: 'Partner 3' },
+    { image: '/images/partner/google.png', name: 'Partner 4' },
+    { image: '/images/partner/paypal.png', name: 'Partner 5' },
+    { image: '/images/partner/city.avif', name: 'Partner 6' },
   ];
 
   return (
@@ -55,13 +55,13 @@ const PartnersSection = () => {
               viewport={{ once: true }}
               className="flex items-center justify-center"
             >
-              <div className="glass-effect p-6 rounded-xl border border-white/5 hover:border-white/10 transition-all duration-300 h-24 w-full flex items-center justify-center">
+              <div className="glass-effect rounded-xl  transition-all duration-300 h-24 w-full flex items-center justify-center">
                 <Image
                   src={partner.image} 
                   alt={partner.name} 
                   width={200}
                   height={80}
-                  className="max-h-12 w-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="h-full w-full  opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 rounded-md"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = "https://placehold.co/200x80/7d2ae8/ffffff?text=Partner";
