@@ -5,9 +5,9 @@ import ErrorContent from '../error/ErrorContent';
 
 const ErrorPageWrapper = () => {
   return (
-    <main>
+  
       <ErrorContent />
-    </main>
+
   );
 };
 
