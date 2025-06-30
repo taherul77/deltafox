@@ -10,13 +10,11 @@ import CTASection from '../sections/CTASection';
 const MembershipPageWrapper = () => {
   return (
     <>
-      <Header />
-      <main>
+    
         <MembershipBanner />
         <MembershipContent />
         <CTASection />
-      </main>
-      <Footer />
+    
     </>
   );
 };
