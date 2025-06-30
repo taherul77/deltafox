@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
+
 import CTASection from '../sections/CTASection';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -56,13 +55,11 @@ const BlogDetailsPageWrapper = ({ slug }: BlogDetailsPageWrapperProps) => {
   console.log('BlogDetailsPageWrapper slug:', slug); // Use console.log directly without importing
   return (
     <>
-      <Header />
-      <main>
+
         <BlogDetailsBanner />
         <BlogDetailsContent />
         <CTASection />
-      </main>
-      <Footer />
+     
     </>
   );
 };
