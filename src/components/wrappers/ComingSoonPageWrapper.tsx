@@ -5,9 +5,9 @@ import ComingSoonContent from '../coming-soon/ComingSoonContent';
 
 const ComingSoonPageWrapper = () => {
   return (
-    <main>
+ 
       <ComingSoonContent />
-    </main>
+    
   );
 };
 
