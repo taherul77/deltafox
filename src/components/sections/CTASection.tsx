@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-secondary to-secondary/70 text-white relative overflow-hidden">
+    <section className="py-20 bg-transparent text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-10 left-10 w-16 h-16 rounded-full bg-primary/20 blur-md animate-float"></div>
       <div className="absolute bottom-10 right-10 w-20 h-20 rounded-full bg-accent/20 blur-md animate-float-slow"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
-          <motion.div 
+          <motion.div
             className="w-full lg:w-2/3 mb-8 lg:mb-0"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -26,8 +26,8 @@ const CTASection = () => {
               Get in touch with us today and discover how our services can help your business grow and succeed in the digital world.
             </p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="w-full lg:w-1/3 flex justify-center lg:justify-end"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

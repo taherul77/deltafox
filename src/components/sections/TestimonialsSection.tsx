@@ -16,21 +16,21 @@ interface TestimonialProps {
 const TestimonialsSection = () => {
   const testimonials: TestimonialProps[] = [
     {
-      content: "Working with Stax has been an incredible experience. Their team delivered a top-notch solution that exceeded our expectations. I highly recommend their services to anyone looking for quality IT solutions.",
+      content: "Working with deltaFox has been an incredible experience. Their team delivered a top-notch solution that exceeded our expectations. I highly recommend their services to anyone looking for quality IT solutions.",
       name: "John Smith",
       position: "CEO",
       company: "TechCorp",
       image: "/images/testimonial1.jpg",
     },
     {
-      content: "The team at Stax transformed our digital presence completely. Their attention to detail and commitment to excellence is unmatched. We've seen a significant increase in our online engagement since working with them.",
+      content: "The team at deltaFox transformed our digital presence completely. Their attention to detail and commitment to excellence is unmatched. We've seen a significant increase in our online engagement since working with them.",
       name: "Sarah Johnson",
       position: "Marketing Director",
       company: "Innovate Inc",
       image: "/images/testimonial2.jpg",
     },
     {
-      content: "Stax provided us with a custom solution that perfectly addressed our unique business needs. Their expertise and professionalism made the entire process smooth and stress-free.",
+      content: "deltaFox provided us with a custom solution that perfectly addressed our unique business needs. Their expertise and professionalism made the entire process smooth and stress-free.",
       name: "Michael Brown",
       position: "CTO",
       company: "DataSystems",
@@ -41,28 +41,28 @@ const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-dark to-darkPurple text-white relative overflow-hidden">
+    <section className="py-20 bg-transparent relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-20 left-10 w-16 h-16 rounded-full bg-primary/10 blur-md animate-float"></div>
       <div className="absolute bottom-20 right-10 w-20 h-20 rounded-full bg-secondary/10 blur-md animate-float-slow"></div>
       <div className="absolute top-1/2 right-1/4 w-12 h-12 rounded-full bg-accent/10 blur-md animate-float-slower"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.p 
+          <motion.p
             className="text-primary font-semibold mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,8 +71,8 @@ const TestimonialsSection = () => {
           >
             TESTIMONIALS
           </motion.p>
-          
-          <motion.h2 
+
+          <motion.h2
             className="text-4xl md:text-5xl font-bold mb-6 text-white"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -81,15 +81,15 @@ const TestimonialsSection = () => {
           >
             What Our Clients Say
           </motion.h2>
-          
-          <motion.p 
+
+          <motion.p
             className="text-gray-300 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Discover what our clients have to say about their experiences working with us. 
+            Discover what our clients have to say about their experiences working with us.
             We pride ourselves on delivering exceptional service and results.
           </motion.p>
         </div>
@@ -107,10 +107,10 @@ const TestimonialsSection = () => {
                 {/* Image */}
                 <div className="w-full md:w-1/3 flex-shrink-0">
                   <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-secondary">
-                    <Image 
+                    <Image
                       width={128}
                       height={128}
-                      src={testimonials[currentIndex].image} 
+                      src={testimonials[currentIndex].image}
                       alt={testimonials[currentIndex].name}
                       className="w-full h-full object-cover"
                       onError={(e) => {
@@ -126,7 +126,7 @@ const TestimonialsSection = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="w-full md:w-2/3">
                   <div className="flex mb-4">
@@ -144,13 +144,13 @@ const TestimonialsSection = () => {
 
           {/* Navigation Buttons */}
           <div className="flex justify-center mt-8 gap-4">
-            <button 
+            <button
               onClick={handlePrev}
               className="w-12 h-12 rounded-full bg-secondary/70 hover:bg-secondary flex items-center justify-center transition-colors duration-300"
             >
               <FiChevronLeft size={24} />
             </button>
-            <button 
+            <button
               onClick={handleNext}
               className="w-12 h-12 rounded-full bg-secondary/70 hover:bg-secondary flex items-center justify-center transition-colors duration-300"
             >

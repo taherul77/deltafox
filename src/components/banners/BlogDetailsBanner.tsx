@@ -6,40 +6,46 @@ import Link from 'next/link';
 
 const BlogDetailsBanner = () => {
   return (
-    <section className="relative py-32 bg-[#13042a] overflow-hidden">
+    <section className="relative bg-transparent pt-48 pb-24 overflow-hidden min-h-[60vh] flex items-center">
       {/* Background Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-secondary/5 blur-xl"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-primary/5 blur-xl"></div>
-      
-      {/* Decorative Shapes */}
-      <div className="absolute top-40 left-20 w-16 h-16 border-2 border-secondary/20 rounded-full animate-spin-slow"></div>
-      <div className="absolute bottom-20 right-20 w-20 h-20 border-2 border-primary/20 rounded-full animate-spin-slow"></div>
-      
+      <div className="absolute top-1/3 left-10 w-32 h-32 rounded-full bg-secondary/10 blur-2xl"></div>
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 rounded-full bg-primary/10 blur-2xl"></div>
+
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center">
-          <motion.h1 
-            className="text-4xl md:text-5xl font-bold text-white mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Blog Details
-          </motion.h1>
-          
+        <div className="text-center flex flex-col items-center">
           <motion.div
-            className="flex items-center justify-center text-gray-300"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.6 }}
+            className="mb-8"
           >
-            <Link href="/" className="hover:text-primary transition-colors duration-300">
-              Home
-            </Link>
-            <span className="mx-2">/</span>
-            <span className="text-primary">Blog Details</span>
+            <div className="flex items-center justify-center space-x-2 text-white/60 font-medium tracking-widest text-sm uppercase">
+              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+              <span>/</span>
+              <span className="text-primary">Blog Details</span>
+            </div>
           </motion.div>
+
+          <motion.h1
+            className="text-6xl md:text-8xl lg:text-[100px] font-bold text-white mb-8 tracking-tighter leading-[0.9]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          >
+            Blog <span className="text-white/40">Details</span>
+          </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"
+          />
         </div>
       </div>
+
+      {/* Glossy Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2E2B37] pointer-events-none opacity-40" />
     </section>
   );
 };

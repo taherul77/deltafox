@@ -7,7 +7,7 @@ import { FiCheck } from "react-icons/fi";
 
 const AboutContent = () => {
   return (
-    <section className="py-24 overflow-hidden bg-[#13042a]">
+    <section className="py-24 overflow-hidden bg-transparent">
       <div className="container mx-auto px-4">
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">

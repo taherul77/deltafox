@@ -28,11 +28,11 @@ const ServicesShowcase = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#13042a] relative overflow-hidden">
+    <section className="py-24 bg-transparent relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-secondary/5 blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-primary/5 blur-xl"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center mb-16">
           <motion.div
@@ -47,7 +47,7 @@ const ServicesShowcase = () => {
               Quality <span className="text-primary">Services</span>
             </h2>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ const ServicesShowcase = () => {
             </p>
           </motion.div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -71,11 +71,11 @@ const ServicesShowcase = () => {
               className="glass-effect rounded-2xl p-6 border border-white/5 group relative overflow-hidden"
             >
               <div className="mb-6 overflow-hidden rounded-xl">
-                <Image 
+                <Image
                   width={600}
                   height={400}
-                  src={service.image} 
-                  alt={service.title} 
+                  src={service.image}
+                  alt={service.title}
                   className="w-full h-auto rounded-xl transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -83,14 +83,14 @@ const ServicesShowcase = () => {
                   }}
                 />
               </div>
-              
+
               <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
-              
+
               <p className="text-gray-300 mb-6">
                 {service.description}
               </p>
-              
-              <Link 
+
+              <Link
                 href="/services/service-details"
                 className="text-primary font-medium hover:text-white transition-colors duration-300"
               >

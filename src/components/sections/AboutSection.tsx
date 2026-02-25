@@ -7,11 +7,11 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section className="py-24 overflow-hidden bg-[#13042a]">
+    <section className="py-24 overflow-hidden bg-transparent">
       {/* Background Elements */}
       <div className="absolute top-1/3 left-10 w-16 h-16 rounded-full bg-secondary/10 blur-md"></div>
       <div className="absolute bottom-1/4 right-10 w-20 h-20 rounded-full bg-primary/10 blur-md"></div>
-      
+
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Image Side */}
@@ -25,14 +25,14 @@ const AboutSection = () => {
               <div className="relative rounded-3xl overflow-hidden">
                 {/* Purple Gradient Background */}
                 {/* <div className="absolute inset-0 bg-purple-gradient opacity-20 rounded-3xl"></div> */}
-                
+
                 {/* Main Image */}
                 <div className="relative z-10">
-                  <Image 
+                  <Image
                     width={600}
                     height={400}
-                    src="/newImage/about.png" 
-                    alt="About Us" 
+                    src="/newImage/about.png"
+                    alt="About Us"
                     className="w-full h-auto rounded-3xl"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
@@ -40,7 +40,7 @@ const AboutSection = () => {
                     }}
                   />
                 </div>
-                
+
                 {/* Floating Elements */}
                 {/* <FloatingElement 
                   className="absolute top-10 left-0 transform -translate-x-1/3 z-20"
@@ -54,7 +54,7 @@ const AboutSection = () => {
                     </div>
                   </div>
                 </FloatingElement> */}
-                
+
                 {/* <FloatingElement 
                   className="absolute bottom-10 right-0 transform translate-x-1/3 z-20"
                   duration={5}
@@ -68,14 +68,14 @@ const AboutSection = () => {
                     </div>
                   </div>
                 </FloatingElement> */}
-                
+
                 {/* Shape Elements */}
                 <div className="absolute bottom-5 right-5 w-32 h-32 rounded-full border-4 border-[#529367] border-dashed animate-spin-slow"></div>
                 <div className="absolute top-5 left-5 w-24 h-24 rounded-full border-4 border-primary/20 border-dashed animate-spin-slow"></div>
               </div>
             </motion.div>
           </div>
-          
+
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
             <motion.div
@@ -88,8 +88,8 @@ const AboutSection = () => {
                 WHO WE ARE
               </p>
             </motion.div>
-            
-            <motion.h2 
+
+            <motion.h2
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,8 +98,8 @@ const AboutSection = () => {
             >
               We Are <span className="text-secondary">All In One</span> IT Solution &amp; Technology Company
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               className="text-gray-300 mb-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -108,8 +108,8 @@ const AboutSection = () => {
             >
               We are leading technology solutions providing company all over the world doing over 40 years lorem ipsum dolor sit amet.
             </motion.p>
-            
-            <motion.p 
+
+            <motion.p
               className="text-gray-300 mb-8"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ const AboutSection = () => {
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </motion.p>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -135,7 +135,7 @@ const AboutSection = () => {
                 </div>
                 <span className="text-white">First Working Process</span>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
                   <svg className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +144,7 @@ const AboutSection = () => {
                 </div>
                 <span className="text-white">Dedicated Team Member</span>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
                   <svg className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -153,7 +153,7 @@ const AboutSection = () => {
                 </div>
                 <span className="text-white">24/7 Support</span>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
                   <svg className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -163,7 +163,7 @@ const AboutSection = () => {
                 <span className="text-white">Timely Deliverables</span>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

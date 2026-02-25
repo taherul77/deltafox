@@ -98,7 +98,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-dark to-darkPurple relative overflow-hidden">
+    <section className="py-20 bg-transparent relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">

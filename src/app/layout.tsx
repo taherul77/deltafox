@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ParticleBackground from "@/components/visuals/ParticleBackground";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -11,7 +11,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Delta Fox - IT Solutions & Services",
   description: "Leading technology solutions providing company",
 };
@@ -23,12 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans antialiased`}>
-        <main className="overflow-hidden">
+      <body className={`${poppins.variable} font-sans antialiased text-white bg-[#2E2B37] min-h-screen`}>
+        <ParticleBackground />
+        <div className="relative z-10">
           <Header />
-          {children}
+          <main>
+            {children}
+          </main>
           <Footer />
-        </main>
+        </div>
       </body>
     </html>
   );

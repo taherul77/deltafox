@@ -15,15 +15,15 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#13042a] relative overflow-hidden">
+    <section className="py-16 bg-transparent border-t border-white/5">
       {/* Background Elements */}
       <div className="absolute top-1/4 left-10 w-20 h-20 rounded-full bg-secondary/5 blur-xl"></div>
       <div className="absolute bottom-1/4 right-10 w-24 h-24 rounded-full bg-primary/5 blur-xl"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.p 
+          <motion.p
             className="text-primary font-semibold mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -32,8 +32,8 @@ const PartnersSection = () => {
           >
             TRUSTED BY OVER 1500+ COMPANIES
           </motion.p>
-          
-          <motion.h2 
+
+          <motion.h2
             className="text-3xl md:text-4xl font-bold mb-6 text-white"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,8 +57,8 @@ const PartnersSection = () => {
             >
               <div className="glass-effect rounded-xl  transition-all duration-300 h-24 w-full flex items-center justify-center">
                 <Image
-                  src={partner.image} 
-                  alt={partner.name} 
+                  src={partner.image}
+                  alt={partner.name}
                   width={200}
                   height={80}
                   className="h-full w-full  opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 rounded-md"

@@ -9,7 +9,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaArrowRi
 
 const Footer = () => {
   const [email, setEmail] = useState('');
-  
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
@@ -22,11 +22,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#13042a] text-white pt-20 pb-8 relative overflow-hidden">
+    <footer className="relative bg-[#0a0c14] pt-20 pb-10 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-1/3 left-10 w-32 h-32 rounded-full bg-secondary/5 blur-xl"></div>
       <div className="absolute bottom-1/4 right-10 w-40 h-40 rounded-full bg-primary/5 blur-xl"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
           {/* Company Info */}
@@ -40,14 +40,14 @@ const Footer = () => {
           >
             <div className="flex items-center mb-6">
               <Image src="/logo/logo.png" alt="Logo" width={150} height={80} className="mr-3" />
-              {/* <h2 className="text-2xl font-bold text-white">Stax</h2> */}
+              {/* <h2 className="text-2xl font-bold text-white">deltaFox</h2> */}
             </div>
-            
+
             <p className="text-gray-300 mb-6 max-w-md">
-              Leading technology solutions providing company all over the world doing over 40 years. 
+              Leading technology solutions providing company all over the world doing over 40 years.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            
+
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3">
@@ -55,16 +55,16 @@ const Footer = () => {
                 </div>
                 <span className="text-gray-300">2750 Quadra Street Victoria, Canada</span>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3">
                   <FiMail className="text-primary" />
                 </div>
-                <a href="mailto:hello@stax.com" className="text-gray-300 hover:text-primary transition-colors">
-                  hello@stax.com
+                <a href="mailto:hello@deltaFox.com" className="text-gray-300 hover:text-primary transition-colors">
+                  deltaFox@gmail.com
                 </a>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3">
                   <FiPhone className="text-primary" />
@@ -89,7 +89,7 @@ const Footer = () => {
               {['About Us', 'Services', 'Projects', 'Blog', 'Contact'].map((item) => (
                 <li key={item} className="flex items-center">
                   <FaArrowRight className="text-primary mr-2 text-xs" />
-                  <Link 
+                  <Link
                     href={`/${item.toLowerCase().replace(' ', '-')}`}
                     className="text-gray-300 hover:text-primary transition-colors"
                   >
@@ -113,7 +113,7 @@ const Footer = () => {
               {['Web Development', 'App Development', 'UI/UX Design', 'Cloud Services', 'IT Consulting'].map((item) => (
                 <li key={item} className="flex items-center">
                   <FaArrowRight className="text-primary mr-2 text-xs" />
-                  <Link 
+                  <Link
                     href="/services"
                     className="text-gray-300 hover:text-primary transition-colors"
                   >
@@ -136,7 +136,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-6">
               Subscribe to our newsletter to receive the latest updates and offers.
             </p>
-            
+
             <form onSubmit={handleSubmit} className="relative">
               <input
                 type="email"
@@ -146,14 +146,14 @@ const Footer = () => {
                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
                 required
               />
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary hover:bg-yellow-500 text-[#13042a] w-10 h-10 rounded-full flex items-center justify-center transition-colors"
               >
                 <FiSend />
               </button>
             </form>
-            
+
             <div className="flex space-x-3 mt-6">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-[#13042a] transition-all">
                 <FaFacebookF />

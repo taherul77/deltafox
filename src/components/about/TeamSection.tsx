@@ -24,12 +24,12 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, position, delay })
       <div className="glass-effect rounded-2xl p-4 border border-white/5 group relative overflow-hidden h-full">
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-purple-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-        
+
         {/* Image */}
         <div className="relative overflow-hidden rounded-xl mb-5">
-          <Image 
-            src={image} 
-            alt={name} 
+          <Image
+            src={image}
+            alt={name}
             width={400}
             height={500}
             className="w-full h-64 rounded-xl transition-transform duration-500 group-hover:scale-110"
@@ -38,7 +38,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, position, delay })
               target.src = "https://placehold.co/400x500/7d2ae8/ffffff?text=Team+Member";
             }}
           />
-          
+
           {/* Social Media Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#13042a]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
             <div className="flex space-x-3">
@@ -57,7 +57,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, position, delay })
             </div>
           </div>
         </div>
-        
+
         {/* Content */}
         <div className="text-center">
           <h3 className="text-xl font-bold text-white mb-1">{name}</h3>
@@ -113,15 +113,15 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#13042a] relative overflow-hidden">
+    <section className="py-24 bg-transparent relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-secondary/5 blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-primary/5 blur-xl"></div>
       <div className="absolute top-1/2 right-1/4 w-24 h-24 rounded-full bg-accent/5 blur-xl"></div>
-      
+
       {/* Team Background Image */}
       <div className="absolute inset-0 bg-[url('/images/about/team-bg.jpg')] bg-cover bg-center opacity-5"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Team Grid - Full Width Row */}
         {/* <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4 mb-24">
@@ -150,10 +150,10 @@ const TeamSection = () => {
             </motion.div>
           ))}
         </div> */}
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.p 
+          <motion.p
             className="text-primary font-semibold mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -162,8 +162,8 @@ const TeamSection = () => {
           >
             OUR TEAM MEMBERS
           </motion.p>
-          
-          <motion.h2 
+
+          <motion.h2
             className="text-3xl md:text-4xl font-bold mb-6 text-white"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -172,8 +172,8 @@ const TeamSection = () => {
           >
             Meet Our Expert Team
           </motion.h2>
-          
-          <motion.p 
+
+          <motion.p
             className="text-gray-300 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

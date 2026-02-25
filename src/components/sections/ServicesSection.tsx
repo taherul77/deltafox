@@ -24,19 +24,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, del
       <div className="glass-effect rounded-2xl p-8 hover:shadow-card transition-all duration-500 h-full border border-white/5 group relative overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-purple-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-        
+
         {/* Decorative Elements */}
         <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full border-2 border-secondary/10 border-dashed opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        
+
         {/* Icon */}
         <div className="bg-secondary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:bg-secondary group-hover:text-white transition-all duration-500 relative z-10">
           <div className="text-3xl">{icon}</div>
         </div>
-        
+
         {/* Content */}
         <h3 className="text-xl font-bold mb-4 text-white group-hover:text-primary transition-colors duration-300 relative z-10">{title}</h3>
         <p className="text-gray-300 relative z-10">{description}</p>
-        
+
         {/* Read More Link */}
         <div className="mt-6 relative z-10">
           <Link href="/services/service-details" className="text-primary font-medium inline-flex items-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
@@ -46,7 +46,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, del
             </svg>
           </Link>
         </div>
-        
+
         {/* Card Number */}
         <div className="absolute -bottom-8 -left-8 text-8xl font-bold text-white opacity-5 select-none">
           {index + 1}
@@ -91,16 +91,16 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#13042a] relative overflow-hidden">
+    <section className="py-24 bg-transparent relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-secondary/5 blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-primary/5 blur-xl"></div>
       <div className="absolute top-1/2 right-1/4 w-24 h-24 rounded-full bg-accent/5 blur-xl"></div>
-      
+
       {/* Decorative Shapes */}
       <div className="absolute top-40 left-20 w-16 h-16 border-2 border-secondary/20 rounded-full animate-spin-slow"></div>
       <div className="absolute bottom-40 right-20 w-20 h-20 border-2 border-primary/20 rounded-full animate-spin-slow"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -109,16 +109,16 @@ const ServicesSection = () => {
               OUR SERVICES
             </p>
           </FadeIn>
-          
+
           <FadeIn delay={0.1}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               We Offer Professional IT Solutions
             </h2>
           </FadeIn>
-          
+
           <FadeIn delay={0.2}>
             <p className="text-gray-300 max-w-3xl mx-auto">
-              Our comprehensive IT services are designed to help your business thrive in the digital age. 
+              Our comprehensive IT services are designed to help your business thrive in the digital age.
               From web development to cloud solutions, we&apos;ve got you covered.
             </p>
           </FadeIn>
