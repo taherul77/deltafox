@@ -6,7 +6,9 @@ import { FiMapPin, FiPhone, FiMail, FiSend } from 'react-icons/fi';
 
 const ContactSection = () => {
   return (
-    <section className="py-24 bg-[#13042a] relative overflow-hidden">
+    <section className="py-24 bg-transparent relative overflow-hidden">
+      {/* Dark overlay to maintain readability while showing background animation */}
+      <div className="absolute inset-0  -z-10"></div>
       {/* Background Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-secondary/5 blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-primary/5 blur-xl"></div>

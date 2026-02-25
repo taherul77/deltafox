@@ -63,7 +63,7 @@ const ParticleBackground = () => {
     return (
         <div
             id="global-bg-animation"
-            className="fixed inset-0 w-full h-full pointer-events-none z-[-1] overflow-hidden bg-[#2E2B37]"
+            className="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden bg-[#2E2B37]"
         >
             <Canvas camera={{ position: [0, 0, 5], fov: 60 }} dpr={[1, 2]}>
                 <React.Suspense fallback={null}>

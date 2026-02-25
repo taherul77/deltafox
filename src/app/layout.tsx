@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans antialiased text-white bg-[#2E2B37] min-h-screen`}>
+      <body className={`${poppins.variable} font-sans antialiased text-white bg-transparent min-h-screen`}>
         <ParticleBackground />
         <div className="relative z-10">
           <Header />
